@@ -6,7 +6,7 @@
   <!-- <a href="https://acheminhapeca.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Ache Minha Peca</h1>
+<h1 align="center"> 🏎 Ache Minha Peca</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/marcosmazarin/ache-minha-peca?color=56BEB8">
@@ -53,7 +53,7 @@ Ao concluir o formulário de solicitação, uma notificação é disparada via T
 ## :sparkles: Features
 
 :heavy_check_mark: Demonstrar interesse em uma peça;\
-:heavy_check_mark: Notificar o interesse ao owner do projeto;\
+:heavy_check_mark: Notificar o interesse ao owner do projeto;
 
 ## :rocket: Technologies
 
