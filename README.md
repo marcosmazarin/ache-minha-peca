@@ -1,159 +1,97 @@
-<div align="center">
+<div align="center" id="top"> 
+  <img src="./.github/app.gif" alt="Ache Minha Peca" />
 
-# 🐤 Updo - Website Monitoring Tool
+&#xa0;
 
-<p align="center">
-  <img src="images/demo.png" alt="Updo demo" width="600"/>
-</p>
-
-Updo is a command-line tool for monitoring website uptime and performance. It provides real-time metrics on website status, response time, SSL certificate expiry, and more, with alert notifications.
-
-![Language:Go](https://img.shields.io/static/v1?label=Language&message=Go&color=blue&style=flat-square)
-![License:MIT](https://img.shields.io/static/v1?label=License&message=MIT&color=blue&style=flat-square)
-[![Latest Release](https://img.shields.io/github/v/release/Owloops/updo?style=flat-square)](https://github.com/Owloops/updo/releases/latest)
-
+  <!-- <a href="https://acheminhapeca.netlify.app">Demo</a> -->
 </div>
 
-## Features
+<h1 align="center">Ache Minha Peca</h1>
 
-- Real-time monitoring of website uptime and performance
-- Displays various metrics like uptime percentage, average response time, and SSL certificate expiry
-- Desktop alert notifications for website status changes
-- Customizable refresh intervals and request timeouts
-- Supports HTTP and HTTPS, with options to skip SSL verification
-- Assertion on response body content
-- Command-line interface with subcommand support
-- Simple mode with fancy or plain text output
-- Automatic terminal capability detection
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8">
 
-## Demo
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8">
 
-<https://github.com/Owloops/updo/assets/17541283/5edd2eb1-af81-4b88-96e2-643c80d46aca>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8">
 
-## Installation
+  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8">
 
-<details>
-<summary>Download executable binaries</summary>
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8" /> -->
 
-#### You can download executable binaries from the latest release page
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8" /> -->
 
-> [![Latest Release](https://img.shields.io/github/v/release/Owloops/updo?style=flat-square)](https://github.com/Owloops/updo/releases/latest)
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca?color=56BEB8" /> -->
+</p>
 
-</details>
+<!-- Status -->
 
-<details>
-<summary>Build from source</summary>
+<!-- <h4 align="center">
+	🚧  Ache Minha Peca 🚀 Under construction...  🚧
+</h4>
 
-#### You can install Updo by cloning the repository and building the binary
+<hr> -->
 
-Make sure your system has Go [installed](https://go.dev/doc/install).
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+</p>
 
-> ```bash
-> git clone https://github.com/Owloops/updo.git
-> cd updo
-> go build
-> ```
+<br>
 
-#### Another way to install it if you have go in your machine just
+## :dart: About
 
-```sh
-GOBIN="absolute_path_where_you_want_binaries_to_be_installed" go install github.com/Owloops/updo@latest
-```
+Describe your project
 
-</details>
+## :sparkles: Features
 
-> [!NOTE]  
-> You may get a warning message on Windows and MacOS, which is discussed in this issue <https://github.com/Owloops/updo/issues/4>
->
-> ### macOS Security
->
-> macOS may prevent running downloaded binaries due to security measures. If you get a warning message like "cannot be opened because the developer cannot be verified", you can remove the quarantine attribute with this command:
->
-> ```bash
-> xattr -d com.apple.quarantine /path/to/updo
-> ```
->
-> Replace `/path/to/updo` with the actual path to the downloaded binary (e.g. `~/Downloads/updo_Darwin_arm64/updo`)
+:heavy_check_mark: Feature 1;\
+:heavy_check_mark: Feature 2;\
+:heavy_check_mark: Feature 3;
 
-## Usage
+## :rocket: Technologies
 
-Run Updo using the following command:
+The following tools were used in this project:
 
-```bash
-# Basic usage
-./updo [options] <website-url>
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-# Explicit monitor command
-./updo monitor [options] <website-url>
+## :white_check_mark: Requirements
 
-# Generate shell completions
-./updo completion bash > updo_completion.bash
-```
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-### Docker
-
-You can run Updo using Docker:
-
-```console
-# Build Docker image from locally cloned repo
-docker build -t updo .
-# ... or build straight from repo URL (no cloning needed):
-docker build -t updo https://github.com/Owloops/updo.git
-
-# And now you can run Updo from the built image:
-docker run -it updo [options] --url <website-url>
-```
-
-### Options
-
-- `-u, --url`: URL of the website to monitor
-- `-r, --refresh`: Refresh interval in seconds (default: 5)
-- `-f, --should-fail`: Invert status code success (default: false)
-- `-t, --timeout`: HTTP request timeout in seconds (default: 10)
-- `-l, --follow-redirects`: Follow redirects (default: true)
-- `-s, --skip-ssl`: Skip SSL certificate verification (default: false)
-- `-a, --assert-text`: Text to assert in the response body
-- `-n, --receive-alert`: Enable alert notifications (default: true)
-- `--simple`: Use simple output instead of TUI
-- `--no-fancy`: Disable fancy terminal formatting in simple mode
-- `-c, --count`: Number of checks to perform (0 = infinite)
-- `-h, --help`: Display help message
-
-### Examples
+## :checkered_flag: Starting
 
 ```bash
-# Basic monitoring with defaults
-./updo https://example.com
+# Clone this project
+$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/ache-minha-peca
 
-# Set custom refresh and timeout
-./updo -r 10 -t 5 https://example.com
+# Access
+$ cd ache-minha-peca
 
-# Use simple mode with a set number of checks
-./updo --simple -c 10 https://example.com
+# Install dependencies
+$ yarn
 
-# Simple mode with plain text output
-./updo --simple --no-fancy https://example.com
+# Run the project
+$ yarn start
 
-# Assert text in the response
-./updo -a "Welcome" https://example.com
+# The server will initialize in the <http://localhost:3000>
 ```
 
-## Keyboard Shortcuts
+## :memo: License
 
-- `q` or `Ctrl+C`: Quit the application
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-## Mentions
+Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
 
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
-- [termui](https://github.com/gizak/termui)
-- [Terminal Trove](https://terminaltrove.com/updo)
-- [cobra](https://github.com/spf13/cobra)
-- [bubbletea](https://github.com/charmbracelet/bubbletea)
+&#xa0;
 
-## Contributing
-
-Contributions to Updo are welcome! Feel free to create issues or submit pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+<a href="#top">Back to top</a>
