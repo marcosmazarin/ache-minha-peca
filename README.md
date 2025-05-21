@@ -46,25 +46,24 @@
 
 ## :dart: About
 
-Describe your project
+Ferramenta utilizada para que o cliente possa demonstrar que possui interesse na compra de alguma peça rara para o seu veículo.
+
+Ao concluir o formulário de solicitação, uma notificação é disparada via Telegram para o contato configurado anteriormente.
 
 ## :sparkles: Features
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Demonstrar interesse em uma peça;\
+:heavy_check_mark: Notificar o interesse ao owner do projeto;\
 
 ## :rocket: Technologies
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
+- [.NET Aspire](https://learn.microsoft.com/pt-br/dotnet/aspire/get-started/aspire-overview)
+- [Blazor](https://dotnet.microsoft.com/pt-br/apps/aspnet/web-apps/blazor)
 
-## :white_check_mark: Requirements
+<!--## :white_check_mark: Requirements
 
 Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
@@ -85,6 +84,7 @@ $ yarn start
 
 # The server will initialize in the <http://localhost:3000>
 ```
+-->
 
 ## :memo: License
 
